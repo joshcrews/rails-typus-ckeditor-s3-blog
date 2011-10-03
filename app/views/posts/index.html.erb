@@ -1,0 +1,20 @@
+<%= title "Blog" %>
+<h2><%= yield(:title) %></h2>
+
+<div class="row" id="posts">
+  
+  <div class="eleven columns">
+    <%= render @posts %>
+    <%= paginate(@posts) %>
+  </div><!-- .two-thirds columns -->
+  
+  <div class="four columns">
+    <h4>Archives</h4>
+    <ul>
+      <% archives.each do |archive| %>
+        <li><%= link_to archive.name, blog_archive_path(archive.url_name) %></li>
+      <% end %>
+    </ul>
+  </div><!-- .one-third -->
+  
+</div>

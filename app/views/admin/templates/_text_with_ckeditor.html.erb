@@ -1,0 +1,9 @@
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %>
+  <%= stylesheet_link_tag "/javascripts/ckeditor/contents.css" %>
+<% end %>
+
+<li id="<%= attribute_id %>">
+  <%= form.label attribute, label_text %>
+  <%= form.cktext_area attribute, :toolbar => 'Easy', :width => 800, :height => 400 %>
+</li>

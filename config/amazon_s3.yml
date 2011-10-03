@@ -1,0 +1,24 @@
+development:
+  bucket: bucket
+  access_key_id: some_string
+  secret_access_key:  some_string
+
+test:
+  bucket: bucket
+  access_key_id: some_string
+  secret_access_key:  some_string
+
+cucumber:
+  bucket: bucket
+  access_key_id: some_string
+  secret_access_key:  some_string
+  
+staging:
+  bucket: bucket
+  access_key_id: some_string
+  secret_access_key:  some_string
+
+production:
+  bucket: bucket
+  access_key_id: some_string
+  secret_access_key:  some_string

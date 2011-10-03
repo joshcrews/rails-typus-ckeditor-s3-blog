@@ -1,0 +1,11 @@
+Post:
+  fields:
+    default: title, body
+    form: title, body
+    options:
+      templates:
+        body: text_with_ckeditor
+  order_by: -created_at
+  filters: created_at
+  search: title
+  application: content

@@ -1,0 +1,20 @@
+<div class="row" id="welcome">
+  <div class="two-thirds column">
+    <div class="inner">
+      A content box
+    </div><!-- .inner -->
+  </div>
+  
+  <div class="one-third column">
+    <div class="inner">
+      Another content box
+    </div><!-- .inner -->
+  </div>
+</div><!-- .row -->
+
+<div class="row">
+  <h2>From the Blog</h2>
+  <ul id="posts">
+    <%= render :partial => 'posts/post', :collection => Post.recent_order.limit(3) %>
+  </ul>
+</div><!-- .row -->

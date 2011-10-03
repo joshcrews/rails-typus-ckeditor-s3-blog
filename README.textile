@@ -1,0 +1,32 @@
+h2. With Blog
+
+With Blog is a demo Rails 3.1 app for a generic app that has a simple blog and pages CMS.
+
+h3. My needs
+
+My need is for building Rails apps/CMSs to be hosted on heroku with images on Amazon s3 that has a WYSIWYG editor for writing blog posts.
+
+h3. Install
+
+# clone app
+# bundle install
+# rake db:migrate
+# edit config/amazon_s3.yml for your amazon values
+# commit in git
+# gem install heroku
+# heroku create
+# git push heroku master
+# heroku rake db:migrate
+
+h3. Tests
+
+# rake db:test:clone
+# cucumber
+
+h3. What it is
+
+It's Rails 3.1 app with a CMS for blog posts and pages.  The admin is Rails gem called Typus, that's been hooked up to the WYSIWYG editor CKeditor.  That editor uses paperclip and Amazon S3 to handle the image uploads/storage that are used in blog posts / pages.
+
+It has some basic style through getskeleton.com.
+
+

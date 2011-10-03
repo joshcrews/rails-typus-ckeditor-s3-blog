@@ -1,0 +1,5 @@
+<li style="clear:both;">
+  <h3><%= link_to post.title, blog_path(post) %></h3>
+  <span><%= post.created_at.strftime("%b %e %Y") %></span>
+  <%= post.body.html_safe %>
+</li>
